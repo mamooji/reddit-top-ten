@@ -53,6 +53,7 @@ const Home = () => {
             className="flex flex-col space-y-2"
             action="#"
             onSubmit={(e) => {
+              e.preventDefault();
               getData(searchTerm);
             }}
           >
