@@ -135,6 +135,7 @@ const Home = () => {
                           title: post.data.title,
                           id: post.data.id,
                           link: post.data.permalink,
+                          score: post.data.score,
                         });
                         setLikes(joined);
                         localStorage.setItem("likes", JSON.stringify(joined));
